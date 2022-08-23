@@ -69,11 +69,16 @@ var productsState = [
               
               // LINK JS TO HTML ELEMENT
               const products = document.getElementById('products')
+
+              // link js to html for cart output
+              const names = [];
+
+              document.getElementById("homeDisplayProducts").innerHTML = names
               
               
               // DISPLAY PRODUCTS IN HOME PAGE
               function homeDisplayProducts() {
-                  products.innerHTML = ""
+                  products.innerHTML = "3"
                 // loop into productsState and display
                 for (let i = 0; i < productsState.length; i++) {
                   products.innerHTML += `
@@ -101,3 +106,10 @@ var productsState = [
               
               // CALL THE DISPLAY FUNCTION
               homeDisplayProducts()
+
+              //dispaly products in carts
+              function myCarts() {
+                let 
+              }
+
+              myCarts()
