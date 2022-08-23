@@ -75,7 +75,7 @@ var productsState = [
               function homeDisplayProducts() {
                   products.innerHTML = ""
                 // loop into productsState and display
-                for (let i = 0; i > productsState.length; i++) {
+                for (let i = 0; i < productsState.length; i++) {
                   products.innerHTML += `
                   
                   <div class="product">
