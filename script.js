@@ -73,12 +73,12 @@ var productsState = [
               // link js to html for cart output
               const names = [];
 
-              document.getElementById("homeDisplayProducts").innerHTML = names
+              document.getElementById("demo").innerHTML = names
               
               
               // DISPLAY PRODUCTS IN HOME PAGE
               function homeDisplayProducts() {
-                  products.innerHTML = "3"
+                  products.innerHTML = ""
                 // loop into productsState and display
                 for (let i = 0; i < productsState.length; i++) {
                   products.innerHTML += `
@@ -109,7 +109,14 @@ var productsState = [
 
               //dispaly products in carts
               function myCarts() {
-                let 
+                let h1name = document.getElementById("name").value;
+
+                names.push(h1name);
+
+                let text = "";
+                for (let i =0; i < names.length ;i ++) {
+                      text +=i+1+"" + names [i] + "<br>"  ;              }
+                      document.getElementById(demo).innerHTML = text;
               }
 
               myCarts()
