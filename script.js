@@ -73,7 +73,7 @@ var productsState = [
               // link js to html for cart output
               const names = [];
 
-              document.getElementById("demo").innerHTML = names
+              document.getElementById("demos").innerHTML = names
               
               
               // DISPLAY PRODUCTS IN HOME PAGE
