@@ -102,22 +102,4 @@ var productsState = [
                   
                 }
               }
-              
-              
-              // CALL THE DISPLAY FUNCTION
-              homeDisplayProducts()
-
-              //dispaly products in carts
-              function myCarts() {
-                let h1name = document.getElementById("name").value;
-
-                names.push(h1name);
-
-                let text = "";
-                for (let i =0; i < names.length ;i ++) {
-                      text +=i+1+"" + names [i] + "<br>"  ;              
-                      document.getElementById(demo).innerHTML = text;
-                }
-              }
-
-              myCarts()
+          
