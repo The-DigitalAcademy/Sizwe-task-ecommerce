@@ -94,7 +94,6 @@ function homeDisplayProducts() {
           </div>
     
     `
-    
   }
 }
 
