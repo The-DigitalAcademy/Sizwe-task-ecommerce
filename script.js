@@ -1,5 +1,5 @@
 
-// VARIABLES
+// this is variable connect 
 var StoreData = [
   {
     Number: 1,
@@ -48,10 +48,10 @@ var StoreData = [
 
 {
   Number: 6,
-  category: 'New Balance Fire',
+  category: 'Beats Studio3 Wireless Over-Ear Headphones',
   costs: 4,
   money: 1100,
-  image: 'https://th.bing.com/th/id/OIP.DSuzP9FSUAEKDwt84zECEQHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+  image: 'https://www.istore.co.za/media/catalog/product/m/w/mwuh2aea_5.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
 
 },
 
@@ -59,7 +59,7 @@ var StoreData = [
   Number: 7,
   category: 'Apple TV HD 6th Gen - 32GB',
   costs: 5,
-  money: 5199,
+  money: 7199,
   image: 'https://www.istore.co.za/media/catalog/product/a/p/apple_tv_4k_siri_remote_pure_front_screen__usen_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
 
 },
