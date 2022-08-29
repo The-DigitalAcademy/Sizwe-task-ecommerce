@@ -69,7 +69,7 @@ var StoreData = [
   category: 'Apple AirPods 2 With Charging Case',
   costs: 4,
   money: 2567,
-  image: 'https://istorepreowned.co.za/collections/iphone-xs-max/products/iphone-xs-max-256gb-space-gray-plg-204',
+  image: 'https://www.istore.co.za/media/catalog/product/i/p/iphone_se_starlight_pure_back_iphone_se_starlight_pure_front_2-up_screen__usen.png?format=jpeg',
 
 },
 ]
