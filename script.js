@@ -94,17 +94,23 @@ function myCart() {
   
   cartNum = document.getElementById('cartNum').innerHTML = ++ cartMath;
 
-  displayCart.push({Number: displayCart.length +1,
-                      category: productcategory,
+  displayCart.push({Number: displayCart.length +1,category: productcategory,
                       costs: productcosts,
                       money: productMoney,
                       image: '',})
 
   myDisplay();
-
+  
 //   console.log('displayCart')
 }
 
+var total = 0 ;
+
+for (let i = 0; i < StoreData.length; i++) {
+  total += StoreData[i].money * StoreData[i].costs;
+  
+  console.log('total')
+}
 
 //i want to show myDisplay to HTML
 function myDisplay() {
