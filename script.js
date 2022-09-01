@@ -56,12 +56,14 @@ function myCart(d) {
 //   console.log('displayCart')
 }
 
-var total = 0 ;
+function cartBalance(d) {
 
-for (let i = 0; i < StoreData.length; i++) {
-  total += StoreData[i].money * StoreData[i].costs;
-  
-  console.log('total')
+  cartProduct.push(total[d])
+  document.getElementById('cartTotal').innerHTML = cartProduct.length;
+
+  console.log(cartProduct)
+
+  myDisplay();
 }
 
 //i want to show myDisplay to HTML
