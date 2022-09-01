@@ -1,76 +1,27 @@
-
 // this is variable connect 
 var StoreData = [
-  {
-    Number: 1,
-    category: 'MAC',
-    costs: 4,
-    money: 12000,
-    image: 'https://www.istore.co.za/media/catalog/product/m/g/mgnd3zea.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
-
+  { Number: 1,category: 'MAC', costs: 4, money: 12000, image: 'https://www.istore.co.za/media/catalog/product/m/g/mgnd3zea.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
 },
 
-{
-  Number: 2,
-  category: 'iPhone 13 mini',
-  costs: 3,
-  money: 16000,
-  image: 'https://www.istore.co.za/media/catalog/product/i/p/iphone_13_green_pdp_image_position-1a__wwen_4_1.png?format=jpeg',
-
+{Number: 2,category: 'iPhone 13 mini',costs: 3,money: 16000,image: 'https://www.istore.co.za/media/catalog/product/i/p/iphone_13_green_pdp_image_position-1a__wwen_4_1.png?format=jpeg',
 },
 
-{
-  Number: 3,
-  category: 'iPad Pro M1',
-  costs: 4,
-  money: 16999,
-  image: 'https://www.istore.co.za/media/catalog/product/i/p/ipad_pro_wi-fi_12.9_in_space_gray_pdp_image_position-1b__wwen_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
-
+{Number: 3,category: 'iPad Pro M1',costs: 4,money: 16999,image: 'https://www.istore.co.za/media/catalog/product/i/p/ipad_pro_wi-fi_12.9_in_space_gray_pdp_image_position-1b__wwen_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
 },
 
-{
-  no: 4,
-  category: 'Watch Series 7',
-  costs: 5,
-  money: 6290,
-  image: 'https://www.istore.co.za/media/catalog/product/s/t/starlight_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
-
+{Number: 4,category: 'Watch Series 7',costs: 5,money: 6290,image: 'https://www.istore.co.za/media/catalog/product/s/t/starlight_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
 },
 
-{
-  Number: 5,
-  category: 'AirTag',
-  costs: 3,
-  money: 700,
-  image: 'https://www.istore.co.za/media/catalog/product/a/i/airtag_white_pure_front_screen__usen_1_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
-
+{Number: 5,category: 'AirTag',costs: 3,money: 700,image: 'https://www.istore.co.za/media/catalog/product/a/i/airtag_white_pure_front_screen__usen_1_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
 },
 
-{
-  Number: 6,
-  category: 'Beats Studio3 Wireless Over-Ear Headphones',
-  costs: 4,
-  money: 1100,
-  image: 'https://www.istore.co.za/media/catalog/product/m/w/mwuh2aea_5.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
-
+{Number: 6,category: 'Beats Studio3 Wireless Over-Ear Headphones',costs: 4,money: 1100,image: 'https://www.istore.co.za/media/catalog/product/m/w/mwuh2aea_5.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
 },
 
-{
-  Number: 7,
-  category: 'Apple TV HD 6th Gen - 32GB',
-  costs: 5,
-  money: 7199,
-  image: 'https://www.istore.co.za/media/catalog/product/a/p/apple_tv_4k_siri_remote_pure_front_screen__usen_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
-
+{Number: 7,category: 'Apple TV HD 6th Gen - 32GB',costs: 5,money: 7199,image: 'https://www.istore.co.za/media/catalog/product/a/p/apple_tv_4k_siri_remote_pure_front_screen__usen_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
 },
 
-{
-  Number: 8,
-  category: 'Apple AirPods 2 With Charging Case',
-  costs: 4,
-  money: 2567,
-  image: 'https://www.istore.co.za/media/catalog/product/i/p/iphone_se_starlight_pure_back_iphone_se_starlight_pure_front_2-up_screen__usen.png?format=jpeg',
-
+{Number: 8, category: 'Apple AirPods 2 With Charging Case', costs: 4, money: 2567, image: 'https://www.istore.co.za/media/catalog/product/i/p/iphone_se_starlight_pure_back_iphone_se_starlight_pure_front_2-up_screen__usen.png?format=jpeg',
 },
 ]
 
@@ -94,10 +45,7 @@ function myCart() {
   
   cartNum = document.getElementById('cartNum').innerHTML = ++ cartMath;
 
-  displayCart.push({Number: displayCart.length +1,category: productcategory,
-                      costs: productcosts,
-                      money: productMoney,
-                      image: '',})
+ 
 
   myDisplay();
   
