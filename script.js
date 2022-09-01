@@ -29,8 +29,8 @@ var cartProduct = []
 
 // this is dislay to HTML in JS
 let ProductsiPhoneStore = document.getElementById('ProductsiPhoneStore');
-let displayAmount = document.getElementById('displayAmount');
-let cartTotal = document.getElementById('cartItems')
+let cartNum = document.getElementById('cartNum');
+let cartTotal = document.getElementById('cartTotal')
 
 
 // this is variables to JS
@@ -46,10 +46,10 @@ var total = 0;
 
 function myCart(d) {
   
+  cartProduct.push(StoreData[d])
+   document.getElementById('cartNum').innerHTML =cartProduct.length;
 
-   document.getElementById('cartNum').innerHTML = ++ cartMath;
-
- 
+  console.log(cartProduct)
 
   myDisplay();
   
@@ -86,7 +86,7 @@ function myDisplay() {
         ${'<span>*</span>'.repeat(StoreData[d].costs)}
         </div>
         <div class="product__price">R <span>${StoreData[d].money}</span></div>
-        <button onclick="myCart()">+ ADD TO CART</button>
+        <button onclick="myCart(${d})">+ ADD TO CART</button>
       </div>`
         
     }
