@@ -39,6 +39,7 @@ let productMoney = 0;
 let productcategory;
 let productcosts;
 let productImage;
+var total = 0;
 
 
 
