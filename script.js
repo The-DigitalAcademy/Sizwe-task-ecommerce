@@ -25,6 +25,8 @@ var StoreData = [
 },
 ]
 
+var cartProduct = []
+
 // this is dislay to HTML in JS
 let ProductsiPhoneStore = document.getElementById('ProductsiPhoneStore');
 let displayAmount = document.getElementById('displayAmount');
@@ -41,9 +43,10 @@ let productImage;
 
 
 
-function myCart() {
+function myCart(d) {
   
-  cartNum = document.getElementById('cartNum').innerHTML = ++ cartMath;
+
+   document.getElementById('cartNum').innerHTML = ++ cartMath;
 
  
 
