@@ -1,1221 +1,173 @@
-// this is variable connect 
-var StoreData = [
-  { Number: 1,category: 'MAC', costs: 4, money: 12000, image: 'https://www.istore.co.za/media/catalog/product/m/g/mgnd3zea.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
-},
-
-{Number: 2,category: 'iPhone 13 mini',costs: 3,money: 16000,image: 'https://www.istore.co.za/media/catalog/product/i/p/iphone_13_green_pdp_image_position-1a__wwen_4_1.png?format=jpeg',
-},
-
-{Number: 3,category: 'iPad Pro M1',costs: 4,money: 16999,image: 'https://www.istore.co.za/media/catalog/product/i/p/ipad_pro_wi-fi_12.9_in_space_gray_pdp_image_position-1b__wwen_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
-},
-
-{Number: 4,category: 'Watch Series 7',costs: 5,money: 6290,image: 'https://www.istore.co.za/media/catalog/product/s/t/starlight_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
-},
-
-{Number: 5,category: 'AirTag',costs: 3,money: 700,image: 'https://www.istore.co.za/media/catalog/product/a/i/airtag_white_pure_front_screen__usen_1_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
-},
-
-{Number: 6,category: 'Beats Studio3 Wireless Over-Ear Headphones',costs: 4,money: 1100,image: 'https://www.istore.co.za/media/catalog/product/m/w/mwuh2aea_5.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
-},
-
-{Number: 7,category: 'Apple TV HD 6th Gen - 32GB',costs: 5,money: 7199,image: 'https://www.istore.co.za/media/catalog/product/a/p/apple_tv_4k_siri_remote_pure_front_screen__usen_2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300',
-},
-
-{Number: 8, category: 'Apple AirPods 2 With Charging Case', costs: 4, money: 2567, image: 'https://www.istore.co.za/media/catalog/product/i/p/iphone_se_starlight_pure_back_iphone_se_starlight_pure_front_2-up_screen__usen.png?format=jpeg',
-},
+// PRODUCTS VARIABLE
+var productsState = [
+  {
+    id: 1,
+    name: 'Men Coat Winter',
+    price: 1100,
+    rates: 5,
+    image:
+      'https://litb-cgis.rightinthebox.com/images/x/202010/zxszkn1603458969900.jpg',
+  },
+  {
+    id: 2,
+    name: 'MKM blue skinny',
+    price: 599,
+    rates: 3,
+    image:
+      'https://image.tfgmedia.co.za/image/1/process/486x486?source=https://cdn.tfgmedia.co.za/02/ProductImages/59417917_03.jpg',
+  },
+  {
+    id: 1,
+    name: 'Shoulder Bags',
+    price: 399,
+    rates: 2,
+    image:
+      'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5R9kBbGhISOzd3DVOPDrf_P3qBU1HZyWrk4pm9MV7o50Ve7BneG2gawE_k5jQtHajuranGRuk6gbAfxobhHHGvjuccilCqaN3qMYTZt62tCYDIiMTwtiv-A&usqp=CAE',
+  },
+  {
+    id: 1,
+    name: 'Men Mason Explorer Leather Backpack',
+    price: 3500,
+    rates: 1,
+    image:
+      'https://slimages.macysassets.com/is/image/MCY/products/2/optimized/16529752_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1&fmt=webp',
+  },
+  {
+    id: 1,
+    name: 'Men Leather Dress Belt',
+    price: 490,
+    rates: 1,
+    image:
+      'https://slimages.macysassets.com/is/image/MCY/products/5/optimized/8889015_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1&fmt=webp',
+  },
+  {
+    id: 1,
+    name: 'Original Grand Wing Oxfords',
+    price: 2910,
+    rates: 5,
+    image:
+      'https://slimages.macysassets.com/is/image/MCY/products/6/optimized/14735036_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1&fmt=webp',
+  },
+  {
+    id: 1,
+    name: 'Slim-Fit Magenta & Blue Floral Blazer',
+    price: 970,
+    rates: 4,
+    image:
+      'https://slimages.macysassets.com/is/image/MCY/products/6/optimized/21369806_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1&fmt=webp',
+  },
+  {
+    id: 1,
+    name: ' Grey Check Slim-Fit Dress Pants, Created for Macy',
+    price: 450,
+    rates: 3,
+    image:
+      'https://slimages.macysassets.com/is/image/MCY/products/2/optimized/21543702_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1&fmt=webp',
+  },
 ]
 
-var cartProduct = []
 
-// this is dislay to HTML in JS
-let ProductsiPhoneStore = document.getElementById('ProductsiPhoneStore');
-let cartNum = document.getElementById('cartNum');
-let cartTotal = document.getElementById('cartTotal')
+var jobCount = []
 
 
-// this is variables to JS
-let cartMath = 0;
-let productMoney = 0;
-let productcategory;
-let productcosts;
-let productImage;
-var total = 0;
+// LINK JS TO HTML ELEMENT
+const products = document.getElementById('products')
+const showDisplay = document.getElementById('showDisplay');
+const totalCart = document.getElementById('totalCart')
 
 
-
-
-function myCart(d) {
-  
-  cartProduct.push(StoreData[d])
-   document.getElementById('cartNum').innerHTML =cartProduct.length;
-
- 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-  myDisplay();
-  
-}
-
-function cartBalance(d) {
-
-  cartProduct.push(total[d])
-  document.getElementById('cartTotal').innerHTML = cartProduct.length;
-  console.log(cartProduct)
-  
-  myDisplay();
-}
-
-//i want to show myDisplay to HTML
-function myDisplay() {
-
-    ProductsiPhoneStore.innerHTML = ""
-
-    // this is show the number
-    for (let d = 0; d < StoreData.length; d++) {
-        ProductsiPhoneStore.innerHTML += 
-        
-        `<div class="product">
+// DISPLAY PRODUCTS IN HOME PAGE
+function homeDisplayProducts() {
+    products.innerHTML = ""
+  // loop into productsState and display
+  for (let i = 0; i < productsState.length; i++) {
+    products.innerHTML += `
+    
+    <div class="product">
         <div class="product__img">
-          <img
-            src=${StoreData[d].image}
-            alt=""
-          />
+            <img
+              src=${productsState[i].image}
+              alt=""
+            />
         </div>
+            <div class="product__name">${productsState[i].name}</div>
+              <div class="product__rate">
+                ${'<span>*</span>'.repeat(productsState[i].rates)}
+              </div>
+              <div class="product__price">R <span>${productsState[i].price}</span></div> 
+                <button onclick="Disshow(${i})">Add To Bag</button> 
+          </div>
+    
+    `
+    
+  }
+  countCart.innerHTML = jobCount.length
+}
 
-        <div class="product__category">${StoreData[d].category}</div>
-        <div class="product__cost">
-        ${'<span>*</span>'.repeat(StoreData[d].costs)}
+function Disshow(i) {
+  document.getElementById('countCart').innerHTML = jobCount.length;
+  jobCount.push(productsState[i])
+
+  homeDisplayProducts();
+
+  display()
+  Showtotal()
+}
+
+function display() {
+  showDisplay.innerHTML = ""
+  // loop into productsState and display
+  for (let i = 0; i < jobCount.length; i++) {
+    showDisplay.innerHTML += `
+    
+    <div class="product">
+        <div class="product__img">
+            <img
+              src=${jobCount[i].image}
+              alt=""
+            />
         </div>
-        <div class="product__price">R <span>${StoreData[d].money}</span></div>
-        <button onclick="myCart(${d})">+ ADD TO CART</button>
-      </div>`
-        
-    }
-
+            <div class="product__name">${jobCount[i].name}</div>
+              <div class="product__rate">
+                ${'<span>*</span>'.repeat(jobCount[i].rates)}
+              </div>
+              <div class=+"product__price">R <span>${jobCount[i].price}</span></div> 
+                <button onclick="remove(${i})">- Remove</button> 
+          </div>
+    
+    `
+    
+}
 
 }
-myDisplay();
+
+function remove(i) {
+  jobCount.splice(i, 1)
+  document.getElementById('countCart').innerHTML = jobCount.length;
+  display();
+  Showtotal()
+}
+display()
+
+totalCart.innerHTML = jobCount
+
+// CALL THE DISPLAY FUNCTION
+homeDisplayProducts()
+
+function Showtotal(i) {
+ let total = 0;
+
+  for (let i = 0; i < jobCount.length; i++) {
+    total += jobCount[i].price
+    
+  }
+  
+  totalCart.innerHTML = "R"+total 
+  
+  Showtotal()
+
+  homeDisplayProducts();
+
+  display()
+}
+
