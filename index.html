@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sizwe-task-ecommerce</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--LOGO-->
+    <div class="logo"><span>DA</span>Men's Business Fashion</div>
 
-    <div class="logo">iStore Pre-owned</div>
     <div class="container">
-    <nav>
+      <!--NAVBAR-->
+      <nav>
         <a href="./index.html" class="active">Home</a>
-        <a href="./cart.html">Cart: <span id="cartNum">0</span></a>
+        <a href="#">Cart: <span id="countCart">0</span></a>
         <a href="#">Total: <span id="totalCart">0</span></a>
-    </nav>
- 
-    <section class="products" id="ProductsiPhoneStore">
+      </nav>
+
+      <!--PRODUCTS SECTION-->
+      <section class="products" id="products">
         <div class="product">
           <div class="product__img">
             <img
-              src="https://sneakernews.com/wp-content/uploads/2020/03/new-balance-1500-animal-pack-brown-2.jpg?w=1140"
+              src="https://www.istore.co.za/media/catalog/product/m/a/macbook_pro_space_grey-1_2.png?format=jpeg"
               alt=""
             />
           </div>
 
-          <div class="product__category">New Balance 1500</div>
-          <div class="product__cost">
+
+
+          <div class="product__name">Computer</div>
+          <div class="product__rate">
+            
             <span>*</span><span>*</span><span>*</span><span>*</span>
           </div>
-          <div class="product__price">R <span>1799</span></div>
-          <button onclick="Disshow()">+ ADD TO CART</button>
+          <div class="product__price">R <span>2000</span></div>
+          <button onclick="Disshow()">Add To Bag</button>
+        
         </div>
       </section>
 
-      <br><br><br><br><b></b>
-
       <div class="products" id="showDisplay">balance</div>
 
-       </div>
+
+    </div>
+    
+
+    <!--JAVASCRIPT-->
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
