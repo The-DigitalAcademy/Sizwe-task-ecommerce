@@ -112,6 +112,9 @@ function Disshow(i) {
 
   display()
   Showtotal()
+  saveToStroage()
+  getToLocalStorage()
+  
 }
 
 function display() {
@@ -138,6 +141,8 @@ function display() {
     `
     
 }
+saveToStroage()
+  getToLocalStorage()
 
 }
 
@@ -146,6 +151,8 @@ function remove(i) {
   document.getElementById('countCart').innerHTML = jobCount.length;
   display();
   Showtotal()
+  saveToStroage()
+  getToLocalStorage()
 }
 display()
 
@@ -167,7 +174,22 @@ function Showtotal(i) {
   Showtotal()
 
   homeDisplayProducts();
-
-  display()
+  saveToStroage()
+  getToLocalStorage()
+  
 }
+
+//function can save into LocalStorage
+function  saveToStroage() {
+  let data = JSON.stringify(jobCount)
+  localStorage.setItem('jobCount', data)
+
+}
+ function getToLocalStorage() {
+  let data = JSON.parse(localStorage.getItem('jobCount'))
+  jobCount = data
+ }
+ 
+display()
+
 
